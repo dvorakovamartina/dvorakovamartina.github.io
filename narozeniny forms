@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narozeniny</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('Pozadi.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            text-align: center;
+            padding-top: 200px;
+            position: relative;
+        }
+
+        .nadpis-img {
+            width: 98%;
+            height: auto;
+        }
+
+        p {
+            font-size: 48px;
+            font-family: 'Doto', sans-serif;
+            color: black;
+            height: auto;
+        }
+
+        .square-image {
+            object-fit: cover;
+            position: absolute;
+        }
+
+        .kocka {
+            width: 200px;
+            height: 200px;
+            top: 0px;
+            left: 80%;
+        }
+
+        .telefon {
+            width: 300px;
+            height: 300px;
+            top: 300px;
+            left: 75%;
+        }
+
+        .unicorn2 {
+            width: 350px;
+            height: 350px;
+            top: 300px;
+            left: 1%;
+        }
+
+        .unicorn {
+            width: 200px;
+            height: 200px;
+            top: 5px;
+            left: 3%;
+        }
+
+        /* Styl pro formulář ve stylu Windows 97 */
+        .form-wrapper {
+            width: 400px;
+            margin: auto;
+            background-color: #C0C0C0;
+            border: 2px solid #000;
+            box-shadow: 4px 4px #808080;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-header {
+            background-color: #000080;
+            color: white;
+            padding: 5px 10px;
+            font-size: 18px;
+            text-align: left;
+            font-family: Tahoma, sans-serif;
+        }
+
+        .form-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .form-content label {
+            display: block;
+            font-size: 16px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .form-content input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .form-button {
+            display: inline-block;
+            padding: 5px 20px;
+            font-size: 14px;
+            background-color: #E0E0E0;
+            border: 2px solid #808080;
+            color: black;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-button:active {
+            border: 2px inset #808080;
+        }
+    </style>
+</head>
+<body>
+    <img src="nadpis.PNG" alt="Narozeniny" class="nadpis-img">
+    <p>Již 30.01.2024 oslavím své 27 narozeniny.</p>
+
+    <!-- Obrázky -->
+    <img src="unicorn.GIF" alt="unicorn" class="square-image unicorn">
+    <img src="kocka.GIF" alt="kocka" class="square-image kocka">
+    <img src="telefon.GIF" alt="telefon" class="square-image telefon">
+    <img src="unicorn2.GIF" alt="unicorn2" class="square-image unicorn2">
+
+    <!-- Formulář -->
+    <div class="form-wrapper">
+        <div class="form-header">Účast na narozeninách</div>
+        <div class="form-content">
+            <!-- Formulář propojený s Google Formulářem -->
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSf91XiZTivqOl6_gCni1euZQeomaM39AUeXLrlx9QjeSZTEuQ/formResponse" method="post">
+                <label>
+                    <input type="radio" name="entry.1270751170" value="Zúčastním se"> Zúčastním se
+                </label>
+                <label>
+                    <input type="radio" name="entry.1270751170" value="Nezúčastním se"> Nezúčastním se
+                </label>
+                <label>
+                    <input type="radio" name="entry.1270751170" value="Možná"> Možná
+                </label>
+                <button type="submit" class="form-button">Potvrdit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
